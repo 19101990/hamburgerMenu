@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Oswald:wght@300&display=swap');
+/* 
+font-family: 'Caveat', cursive;
+font-family: 'Oswald', sans-serif;
+ */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 300;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title-container {
+  padding: 2em;
+  background: rgb(255, 208, 0);
+  transform: rotate(-12deg);
+}
+
+.title {
+  /* font-family: 'Caveat', cursive; */
+  font-size: 5em;
+  line-height: 1;
+
+  text-align: center;
+}
+
+.nav-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: 26px;
+  outline: none;
+  color: #333;
+}
+
+.open-btn {
+  position: fixed;
+  top: 20px;
+  left: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  transform: translateX(-105%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav.show {
+  transform: translateX(0);
+}
+
+.nav-black {
+  background-color: #333;
+  width: 50%;
+  max-width: 380px;
+  min-width: 320px;
+  transition-delay: 0.4s;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.555);
+}
+
+.nav-black.show {
+  transition-delay: 0.1s;
+}
+
+.nav-red {
+  background-color: rgb(209, 0, 0);
+  width: 97%;
+  transition-delay: 0.3s;
+}
+
+.nav-red.show {
+  transition-delay: 0.2s;
+}
+
+.nav-yellow {
+  background-color: rgb(255, 208, 0);
+  width: 97%;
+  transition-delay: 0.2s;
+}
+
+.nav-yellow.show {
+  transition-delay: 0.3s;
+}
+
+.nav-white {
+  background-color: rgb(255, 255, 255);
+  width: 97%;
+  padding: 40px;
+  position: relative;
+  transition-delay: 0.1s;
+}
+
+.nav-white.show {
+  transition-delay: 0.4s;
+}
+
+.list {
+  list-style-type: none;
+  padding: 2em 0 2em 2em;
+}
+
+.list li {
+  margin: 10px 0;
+}
+
+.list li a {
+  color: rgb(88, 88, 88);
+  font-size: 1.75em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list li a:hover {
+  color: rgb(209, 0, 0);
+}
